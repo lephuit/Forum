@@ -1,0 +1,96 @@
+.ddsmoothmenu{
+font: bold 12px Verdana;
+background:url(../../images/ddm/menuBg.jpg) repeat-x 0 0; /*background of menu bar (default state)*/
+width: 100%;
+height:auto;
+border:solid #363636;
+border-width:1px 1px 0 1px;
+}
+.ddsmoothmenu ul{
+z-index:100;
+margin: 0;
+padding: 0;
+list-style-type: none;
+}
+
+/*Top level list items*/
+.ddsmoothmenu ul li{
+position: relative;
+display: inline;
+float: left;
+}
+.ddsmoothmenu ul li img{
+	margin:0 0 0 5px;
+}
+/*Top level menu link items style*/
+.ddsmoothmenu ul li a{
+display: block;
+color: white;
+padding: 14px 9px;
+border-right: 1px solid #363636;
+color: #2d2b2b;
+text-decoration: none;
+}
+.ddsmoothmenu ul li ul li a{
+	
+background:#101010; /*background of menu items (default state)*/
+}
+* html .ddsmoothmenu ul li a{ /*IE6 hack to get sub menu links to behave correctly*/
+display: inline-block;
+}
+
+.ddsmoothmenu ul li a:link, .ddsmoothmenu ul li a:visited{
+color: white;
+}
+
+.ddsmoothmenu ul li a.selected{ /*CSS class that's dynamically added to the currently active menu items' LI A element*/
+background: #000; 
+color: white;
+}
+
+.ddsmoothmenu ul li a:hover{
+background:#000; /*background of menu items during onmouseover (hover state)*/
+color: white;
+}
+	
+/*1st sub level menu*/
+.ddsmoothmenu ul li ul{
+position: absolute;
+left: 0;
+display: none; /*collapse all sub menus to begin with*/
+visibility: hidden;
+}
+
+/*Sub level menu list items (undo style from Top level List Items)*/
+.ddsmoothmenu ul li ul li{
+display: list-item;
+float: none;
+}
+
+/*All subsequent sub menu levels vertical offset after 1st level sub menu */
+.ddsmoothmenu ul li ul li ul{
+top: 0;
+}
+
+/* Sub level menu links style */
+.ddsmoothmenu ul li ul li a{
+font: normal 13px Verdana;
+width: 160px; /*width of sub menus*/
+padding: 8px;
+margin: 0;
+border-top-width: 0;
+border-bottom: 1px solid #363636;
+}
+
+/* Holly Hack for IE \*/
+* html .ddsmoothmenu{height: 1%;} /*Holly Hack for IE7 and below*/
+
+/* ######### CSS for shadow added to sub menus  ######### */
+
+.ddshadow{
+position: absolute;
+left: 0;
+top: 0;
+width: 0;
+height: 0;
+}

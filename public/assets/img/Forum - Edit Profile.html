@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+		<meta charset="utf-8">
+        <title>Forum
+             - Edit Profile</title>
+
+        	<link type="text/css" rel="stylesheet" href="Forum%20-%20Edit%20Profile_files/screen.css">
+	</head> 
+    <body>
+        <header> 
+            
+
+			<nav> 
+                <h1 class="logo">Forum</h1> 
+
+				<ul> 
+                                        <li><a href="http://localhost/station/public/index.php/articles">Articles</a></li>
+                    <li><a href="http://localhost/station/public/index.php/categories">Categories</a></li>
+                    <li><a href="http://localhost/station/public/index.php/users/profile">Profile</a></li>
+                    <li><a href="http://localhost/station/public/index.php/users/logout">Logout</a></li>
+                    
+                    
+                                    </ul> 
+			</nav> 
+		</header> 
+			
+		<section> 
+            <div class="content">
+                
+            <h2>Edit</h2>
+<p>Edit your informations.</p>
+
+<form action="http://localhost/station/public/index.php/users/edit" accept-charset="utf-8" method="post">
+<div class="input text required">
+    
+    <label for="form_name">name</label>    <input class="text" size="30" name="name" value="deepesh" id="form_name" type="text"></div>
+
+
+<div class="input text required">
+    <label for="form_email">Email Address</label>    <input class="text" size="30" name="email" value="deepeshlekhak@gmail.com" id="form_email" type="text"></div>
+
+<div class="input text required">
+    <label for="form_pimage">User Profile Image</label>    <div id="uniform-pimage" class="uploader"><input style="opacity: 0;" id="pimage" type="file"><span style="-moz-user-select: none;" class="filename">tick.gif</span><span style="-moz-user-select: none;" class="action">Choose File</span></div>
+</div>
+
+<div class="input text required">
+    
+    <label for="form_address">Address</label>    <input class="text" name="address" value="Sanepa-2, Lalitpur" id="form_address" type="text"></div>
+
+<div class="input submit">
+          
+          <label for="form_gender">Male</label>          <div id="uniform-form_gender" class="radio"><span class="checked"><input style="opacity: 0;" name="gender" value="Male" checked="checked" id="form_gender" type="radio"></span></div>          <label for="form_gender">Female</label>          <div id="uniform-form_gender" class="radio"><span><input style="opacity: 0;" name="gender" value="Female" id="form_gender" type="radio"></span></div>            
+</div>
+
+
+
+
+
+<div class="input submit">
+   <div style="-moz-user-select: none;" class="button hover"><span>Save now<button style="opacity: 0;" type="submit" class="btn btn-default pull-right">Save now</button></span></div>
+</div>
+
+</form>
+
+
+                
+            </div> 
+		</section> 
+ 
+		<footer> 
+			<section> 
+				
+				<aside> 
+                    © Copyright 2013
+                      
+                                   </aside> 
+			</section> 
+		</footer> 
+		
+        <!-- Javascript --> 
+        	<script type="text/javascript" src="Forum%20-%20Edit%20Profile_files/jquery.js"></script>
+	<script type="text/javascript" src="Forum%20-%20Edit%20Profile_files/uniform.js"></script>
+		
+		<script> 
+		$(function() {
+			$("input, textarea, select, button, a.button").uniform();
+		});
+		</script> 
+	 
+
+</body></html>

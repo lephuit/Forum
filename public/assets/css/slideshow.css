@@ -1,0 +1,6 @@
+div.slideshow {
+	width: 932px; height: 243px;
+	overflow: hidden; /* Allows the slides to be viewed using scrollbar if Javascript isn't available */ 
+	display:block;
+}
+	
